@@ -1,0 +1,45 @@
+// Definindo o objeto Smartphone
+let smartphone = {
+  modelo: "iPhone 13",
+  cor: "Preto",
+  tamanhoTela: 6.1,
+  fazerChamada: function(numero) {
+    console.log(`Chamando ${numero}...`);
+  },
+  enviarMensagem: function(contato, mensagem) {
+    console.log(`Enviando mensagem para ${contato}: ${mensagem}`);
+  },
+  tirarFoto: function() {
+    console.log("Tirando uma foto...");
+  }
+};
+
+// Demonstrando o objeto Smartphone
+console.log(`Modelo: ${smartphone.modelo}`);
+console.log(`Cor: ${smartphone.cor}`);
+smartphone.fazerChamada("123-456-789");
+smartphone.enviarMensagem("Amigo", "Oi, como está?");
+smartphone.tirarFoto();
+
+// Definindo o objeto Livro
+let livro = {
+  titulo: "A Arte da Guerra",
+  autor: "Sun Tzu",
+  numeroPaginas: 200,
+  abrir: function() {
+    console.log("Abrindo o livro...");
+  },
+  ler: function(pagina) {
+    console.log(`Lendo a página ${pagina}...`);
+  },
+  fechar: function() {
+    console.log("Fechando o livro...");
+  }
+};
+
+// Demonstrando o objeto Livro
+console.log(`Título: ${livro.titulo}`);
+console.log(`Autor: ${livro.autor}`);
+livro.abrir();
+livro.ler(50);
+livro.fechar();
